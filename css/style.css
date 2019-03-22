@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: 1.6;
     color: #3a3a3a;
 }
@@ -27,60 +27,25 @@ ul {
     padding: 0;
 }
 
-h1,
-a {
-    color: #ffffff;
-}
+
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
+
 /* ---- Navigation ---- */
 
-.name {
-    font-size: 2.25em;
+.clan-logo {
+    margin-right: .5rem;
 }
 
-.name,
-.main-nav li,
-.main-nav a {
-    text-align: center;
-    color: #ffffff;	
-    margin-top: 6px;
-	margin-bottom: 6px;
+.clan-name {
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
-.main-nav a {
-    font-size: .95em;
-    color: #ffffff;	
-}
-
-.main-nav a:hover {
-	color: #3a3a3a;
-}
-
-.name a,
-.main-nav a {
-	padding: 10px 15px;
-}
 
 /* ---- Layout Containers ---- */
 
-.container {
-	padding-left: 1em;
-	padding-right: 1em;
-}
 
-.main-header {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
-	background: #000;
-	margin-bottom: 30px;
-}
-
-
-
-/* ================================= 
-  Media Queries
-==================================== */
