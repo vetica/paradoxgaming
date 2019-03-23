@@ -10,28 +10,79 @@ body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
     color: #3a3a3a;
-}
-
-p {
-    font-size: .95em;
-    margin-bottom: 1.5em;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
 }
 
+.video-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
 
+.wrap {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
 
-/* ================================= 
-  Base Layout Styles
-==================================== */
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 
+.fullscreen-video-wrap video {
+    /* max-height: 100%; */
+    min-width: 100vw;
+    object-fit: fill;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #131829;
+    opacity: .50;
+}
+
+.header-content {
+    z-index: 2;
+    margin-top: 50vh;
+    padding: 0 5rem;
+}
+
+.header-content h1 {
+    font-size: 7em;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+    margin-top: 10px;
+}
 
 /* ---- Navigation ---- */
 
 .nav-item-nonbutton {
     padding-top: 15px;
+}
+
+.navbar-dark {
+    background: linear-gradient(to right, #131829, #23293F, #131829);
 }
 
 .clan-logo {
@@ -44,9 +95,17 @@ a {
     padding-top: 10px;
 }
 
+/* ---- Media Queries ---- */
 
+@media(max-width:960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
 
-
-/* ---- Layout Containers ---- */
-
-
+@media(max-width:768px) {
+    .header-content h1 {
+        font-size: 4rem;
+    }
+}    
+    
