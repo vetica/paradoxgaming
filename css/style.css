@@ -17,6 +17,32 @@ a {
     text-decoration: none;
 }
 
+/* ================================= 
+ Navigation
+==================================== */
+
+.nav-item-nonbutton {
+    padding-top: 15px;
+}
+
+.navbar-dark {
+    background: linear-gradient(to right, #131829, #23293F, #131829);
+}
+
+.clan-logo {
+    margin-right: .5rem;
+}
+
+.clan-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+/* ================================= 
+  Video Topper Styles
+==================================== */
+
 .video-header {
     height: 100vh;
     display: flex;
@@ -54,18 +80,19 @@ a {
     top: 0;
     left: 0;
     background: #131829;
-    opacity: .50;
+    opacity: 0.5;
 }
 
 .header-content {
     z-index: 2;
-    margin-top: 50vh;
+    margin-top: 40vh;
     padding: 0 5rem;
 }
 
 .header-content h1 {
     font-size: 7em;
     margin-bottom: 0;
+    opacity: 0.9;
 }
 
 .header-content p {
@@ -75,37 +102,43 @@ a {
     margin-top: 10px;
 }
 
-/* ---- Navigation ---- */
-
-.nav-item-nonbutton {
-    padding-top: 15px;
+/* ================================= 
+Layout Styles
+==================================== */
+.list-group-item-dark {
+    background: linear-gradient(to right, #131829, #23293F, #131829); 
+    color: white;
 }
 
-.navbar-dark {
-    background: linear-gradient(to right, #131829, #23293F, #131829);
+.lead {
+    font-weight: 600; 
 }
 
-.clan-logo {
-    margin-right: .5rem;
-}
 
-.clan-name {
-    font-weight: 700;
-    font-size: 1.5rem;
-    padding-top: 10px;
-}
 
-/* ---- Media Queries ---- */
+
+/* ================================= 
+Media Queries
+==================================== */
 
 @media(max-width:960px) {
     .container {
-        padding-right: 3rem;
-        padding-left: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
 @media(max-width:768px) {
     .header-content h1 {
         font-size: 4rem;
     }
-}    
+}  
+
+@media(max-width:468px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    .header-content p {
+        font-size: 1rem;
+    }
+}
     
