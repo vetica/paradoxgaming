@@ -127,6 +127,19 @@ Layout Styles
     min-height: 600px;
 }
 
+.card {
+    border: none;
+}
+
+.img-fluid {
+    border-radius: 50%;
+}
+
+.leaders {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
 /* ================================= 
 Media Queries
 ==================================== */
