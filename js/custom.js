@@ -1,13 +1,5 @@
-// function deferVideo() {
-
-//     //defer html5 video loading
-//   $("video source").each(function() {
-//     var sourceFile = $(this).attr("data-src");
-//     $(this).attr("src", sourceFile);
-//     var video = this.parentElement;
-//     video.load();
-//     video.play();
-//   });
-
-// }
-// window.onload = deferVideo;
+window.addEventListener('scroll', function (e) {
+    var scrolled = window.pageYOffset;
+    const background = document.querySelector(".p-img");
+    background.style.top = (scrolled * 0.2) + 'px');
+});

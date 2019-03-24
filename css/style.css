@@ -105,17 +105,27 @@ a {
 /* ================================= 
 Layout Styles
 ==================================== */
-.list-group-item-dark {
-    background: linear-gradient(to right, #131829, #23293F, #131829); 
+
+.lead {
+    font-weight: 600;
+    color: #131829
+}
+
+.btn-dark {
+    background: linear-gradient(to right, #131829, #23293F, #131829);
     color: white;
 }
 
-.lead {
-    font-weight: 600; 
+.p-img {
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/destiny-2-gom.jpg);
+    position: relative;
+    max-width: 100vw;
+    min-height: 600px;
 }
-
-
-
 
 /* ================================= 
 Media Queries
@@ -126,19 +136,21 @@ Media Queries
         padding-right: 2rem;
         padding-left: 2rem;
     }
+    @media(max-width:768px) {
+        .header-content h1 {
+            font-size: 4rem;
+        }
+        .p-img {
+            max-width: 100vw;
+            min-height: 300px;
+        }
 
-@media(max-width:768px) {
-    .header-content h1 {
-        font-size: 4rem;
     }
-}  
-
-@media(max-width:468px) {
-    .header-content h1 {
-        font-size: 2.5rem;
+    @media(max-width:468px) {
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+        .header-content p {
+            font-size: 1rem;
+        }
     }
-    .header-content p {
-        font-size: 1rem;
-    }
-}
-    
