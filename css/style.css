@@ -17,6 +17,7 @@ a {
     text-decoration: none;
 }
 
+
 /* ================================= 
  Navigation
 ==================================== */
@@ -38,6 +39,8 @@ a {
     font-size: 1.5rem;
     padding-top: 10px;
 }
+
+
 
 /* ================================= 
   Video Topper Styles
@@ -139,6 +142,30 @@ Layout Styles
     margin-right: 20%;
     margin-left: 20%;
 }
+
+.alpha-list {
+    list-style-type: lower-alpha;
+    padding-top: .6em;
+}
+
+.roman-list {
+    list-style-type: lower-roman;
+    padding-top: .6em;
+}
+
+.number-list {
+    padding-top: .6em;
+}
+
+.footer-container {
+    background: linear-gradient(to right, #131829, #23293F, #131829);
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+
 
 /* ================================= 
 Media Queries
