@@ -35,9 +35,19 @@
         </div>
     </nav>
 
+    <!-- ALERT -->
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
+            so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+
+    <!-- FORM -->
     <h1 class="text-center mt-4">Apply Now</h1>
     <div class="container form-container">
-        <form class="needs-validation" novalidate>
+        <form class="needs-validation" name="submit-to-google-sheet" novalidate>
 
             <div class="form-group mt-4">
                 <label class="label-title" for="gamertag">Email
@@ -69,20 +79,19 @@
             <div class="form-group mt-4">
                 <label class="label-title" for="age">How old are you?
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="under20" id="under20"
-                            value="under20" checked>
+                        <input class="form-check-input" type="radio" name="age" id="age" value="under20" checked>
                         <label class="form-check-label" for="under20">
                             Under 20
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="over20" id="over20" value="option2">
+                        <input class="form-check-input" type="radio" name="age" id="age" value="20-30">
                         <label class="form-check-label" for="over20">
                             20-39
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="over30" id="over30" value="option2">
+                        <input class="form-check-input" type="radio" name="age" id="age" value="over30">
                         <label class="form-check-label" for="over30">
                             Over 30
                         </label>
@@ -97,7 +106,8 @@
                         <label class="form-check-label" for="Checkbox1">Xbox</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="playstation" id="playstation" value="playstation">
+                        <input class="form-check-input" type="checkbox" name="playstation" id="playstation"
+                            value="playstation">
                         <label class="form-check-label" for="Checkbox2">Playstation</label>
                     </div>
                     <div class="form-check">
@@ -203,6 +213,23 @@
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
     <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <script src="../js/custom.js"></script>
+
+    <!-- FORM SUBMIT TO GOOGLE SUBMISSION -->
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbwuntyfXsS2dsUeYTl910iP8Mi8LzjtpBzMr8bhBowSObAr7IiE/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>

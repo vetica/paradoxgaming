@@ -26,7 +26,3 @@ window.addEventListener('scroll', function (e) {
       });
     }, false);
   })();
-
-// FORM SUBMISSION TO GOOGLE SHEETS
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbwuntyfXsS2dsUeYTl910iP8Mi8LzjtpBzMr8bhBowSObAr7IiE/exec>'
-  const form = document.forms['submit-to-google-sheet']
