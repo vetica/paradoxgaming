@@ -206,6 +206,11 @@ Layout Styles
     margin-bottom: 300px;
 }
 
+.hidden-alert {
+    visibility: hidden;
+    display: none;
+}
+
 /* ================================= 
 Media Queries
 ==================================== */

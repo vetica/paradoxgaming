@@ -36,7 +36,7 @@
     </nav>
 
     <!-- ALERT -->
-    <div class="alert alert-success" role="alert">
+    <div id="alert" class="hidden-alert" role="alert">
         <h4 class="alert-heading">Well done!</h4>
         <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
             so that you can see how spacing within an alert works with this kind of content.</p>
@@ -85,9 +85,9 @@
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="age" id="age" value="20-30">
+                        <input class="form-check-input" type="radio" name="age" id="age" value="20-29">
                         <label class="form-check-label" for="over20">
-                            20-39
+                            20-29
                         </label>
                     </div>
                     <div class="form-check">
@@ -215,7 +215,7 @@
     <script src="../js/custom.js"></script>
 
     <!-- FORM SUBMIT TO GOOGLE SUBMISSION -->
-    <script>
+    <!-- <script>
         const scriptURL =
             'https://script.google.com/macros/s/AKfycbwuntyfXsS2dsUeYTl910iP8Mi8LzjtpBzMr8bhBowSObAr7IiE/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -229,7 +229,7 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
