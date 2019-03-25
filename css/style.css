@@ -121,8 +121,8 @@ Layout Styles
 
 .p-img {
     background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     background-image: url(../img/destiny-2-gom.jpg);
     position: relative;
@@ -134,13 +134,18 @@ Layout Styles
     border: none;
 }
 
-.img-fluid {
+.img {
     border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    border: 10px solid #131829;
 }
 
-.leaders {
-    margin-right: 20%;
-    margin-left: 20%;
+.leader-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #131829;
 }
 
 .alpha-list {
@@ -165,7 +170,13 @@ Layout Styles
     align-items: center;
 }
 
+.fab {
+    padding-right: 5px;
+}
 
+.bio {
+    margin-bottom: 5px;
+}
 
 /* ================================= 
 Media Queries
@@ -176,20 +187,24 @@ Media Queries
         padding-right: 2rem;
         padding-left: 2rem;
     }
+
     @media(max-width:768px) {
         .header-content h1 {
             font-size: 4rem;
         }
+
         .p-img {
             max-width: 100vw;
             min-height: 300px;
         }
 
     }
+
     @media(max-width:468px) {
         .header-content h1 {
             font-size: 2.5rem;
         }
+
         .header-content p {
             font-size: 1rem;
         }
