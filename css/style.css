@@ -109,6 +109,11 @@ a {
 Layout Styles
 ==================================== */
 
+.display-1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
 .lead {
     font-weight: 600;
     color: #131829
