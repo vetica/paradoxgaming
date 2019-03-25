@@ -35,10 +35,153 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h2>JOIN OUR CLAN</h2>
-    </div>
+    <h1 class="text-center mt-4">Apply Now</h1>
+    <div class="container form-container">
+        <form class="needs-validation" novalidate>
 
+            <div class="form-group mt-4">
+                <label class="label-title" for="gamertag">Email
+                    <small class="text-muted">(Required)</small></label>
+                <input type="Email" class="form-control" name="email" id="email" placeholder="email@email.com" required>
+                <div class="invalid-feedback">
+                    Please tell us your email.
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="gamertag">Gamertag
+                    <small class="text-muted">(Required)</small></label>
+                <input type="text" class="form-control" name="gamertag" id="gamertag" placeholder="Gamertag" required>
+                <div class="invalid-feedback">
+                    We need to know what to call you.
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="about">Tell us about yourself
+                    <small class="text-muted">(Required)</small></label>
+                <textarea class="form-control" name="about" id="about" rows="5" required></textarea>
+                <div class="invalid-feedback">
+                    We just want to know a little about you.
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="age">How old are you?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="under20" id="under20"
+                            value="under20" checked>
+                        <label class="form-check-label" for="under20">
+                            Under 20
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="over20" id="over20" value="option2">
+                        <label class="form-check-label" for="over20">
+                            20-39
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="over30" id="over30" value="option2">
+                        <label class="form-check-label" for="over30">
+                            Over 30
+                        </label>
+                    </div>
+            </div>
+
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="platform">What platform do you play on?
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="xbox" id="xbox" value="xbox" checked>
+                        <label class="form-check-label" for="Checkbox1">Xbox</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="playstation" id="playstation" value="playstation">
+                        <label class="form-check-label" for="Checkbox2">Playstation</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="pc" id="pc" value="pc">
+                        <label class="form-check-label" for="Checkbox3">PC</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="nintendo" id="nintendo" value="nintendo">
+                        <label class="form-check-label" for="Checkbox4">Nintendo</label>
+                    </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="games">What games do you play?
+                    <small class="text-muted">(Required)</small></label>
+                <textarea class="form-control" name="games" id="games" rows="3" required></textarea>
+                <div class="invalid-feedback">
+                    Please tell us what games are currently playing.
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="days">What days do you normally play?
+                    <small class="text-muted">(Required)</small></label>
+                </label>
+                <select class="form-control" name="days" id="days" required>
+                    <option></option>
+                    <option>Everyday</option>
+                    <option>Weekends</option>
+                    <option>Weekdays</option>
+                    <option>Sunday</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thrusday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-4">
+                <label class="label-title" for="timezone">Timezone
+                    <small class="text-muted">(Required)</small></label></label>
+                <select class="form-control" name="timezone" id="timezone" required>
+                    <option></option>
+                    <option>Hawaii Standard Time (HST)</option>
+                    <option>Alaska Standard Time (AST)</option>
+                    <option>Pacific Standard Time (PST)</option>
+                    <option>Phoenix Standard Time (PNT)</option>
+                    <option>Mountain Standard Time (MST)</option>
+                    <option>Central Standard Time (CST)</option>
+                    <option>Eastern Standard Time (EST)</option>
+                    <option>Indiana Eastern Standard Time (IET)</option>
+                    <option>Puerto Rico and US Virgin Island Standard Time (PRT)</option>
+                    <option>Canada Newfoundland Time (CNT)</option>
+                    <option>Argentina Standard Time (AGT)</option>
+                    <option>Brazil Eastern Time (BET)</option>
+                    <option>Central African Time (CAT)</option>
+                    <option>Greenwich Mean Time (GMT)</option>
+                    <option>European Central Time (ECT)</option>
+                    <option>Eastern European Time (EET)</option>
+                    <option>Egypt Standard Time (ART)</option>
+                    <option>Eastern African Time (EAT)</option>
+                    <option>Middle East Time (MET)</option>
+                    <option>Near East Time (NET)</option>
+                    <option>Pakistan Lahore Time (PLT)</option>
+                    <option>Bangladesh Standard Time (BST)</option>
+                    <option>Vietnam Standard Time (VST)</option>
+                    <option>China Taiwan Time (CTT)</option>
+                    <option>Japan Standard Time (JST)</option>
+                    <option>Australia Central Time (ACT)</option>
+                    <option>Australia Eastern Time (AET)</option>
+                    <option>Solomon Standard Time (SST)</option>
+                    <option>New Zealand Standard Time (NST)</option>
+                    <option>Midway Islands Time (MIT)</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-4">
+                <button class="btn btn-dark submit" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
 
 
     <!-- FOOTER -->
@@ -56,6 +199,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    <script src="../js/custom.js"></script>
 </body>
 
 </html>
