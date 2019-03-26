@@ -198,6 +198,7 @@ Layout Styles
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
+
 .form-check-label {
     font-weight: 300;
 }
@@ -220,6 +221,7 @@ Media Queries
         padding-right: 2rem;
         padding-left: 2rem;
     }
+}
 
     @media(max-width:768px) {
         .header-content h1 {
